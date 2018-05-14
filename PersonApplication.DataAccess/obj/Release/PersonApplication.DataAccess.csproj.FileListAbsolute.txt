@@ -1,0 +1,10 @@
+C:\RKS_Sorucecode\RKPersonApp_Kalaiselvi\PersonApplication.DataAccess\bin\Release\PersonApplication.DataAccess.dll.config
+C:\RKS_Sorucecode\RKPersonApp_Kalaiselvi\PersonApplication.DataAccess\bin\Release\PersonApplication.DataAccess.dll
+C:\RKS_Sorucecode\RKPersonApp_Kalaiselvi\PersonApplication.DataAccess\bin\Release\PersonApplication.DataAccess.pdb
+C:\RKS_Sorucecode\RKPersonApp_Kalaiselvi\PersonApplication.DataAccess\bin\Release\EntityFramework.dll
+C:\RKS_Sorucecode\RKPersonApp_Kalaiselvi\PersonApplication.DataAccess\bin\Release\EntityFramework.SqlServer.dll
+C:\RKS_Sorucecode\RKPersonApp_Kalaiselvi\PersonApplication.DataAccess\bin\Release\EntityFramework.xml
+C:\RKS_Sorucecode\RKPersonApp_Kalaiselvi\PersonApplication.DataAccess\bin\Release\EntityFramework.SqlServer.xml
+C:\RKS_Sorucecode\RKPersonApp_Kalaiselvi\PersonApplication.DataAccess\obj\Release\PersonApplication.DataAccess.dll
+C:\RKS_Sorucecode\RKPersonApp_Kalaiselvi\PersonApplication.DataAccess\obj\Release\PersonApplication.DataAccess.pdb
+C:\RKS_Sorucecode\RKPersonApp_Kalaiselvi\PersonApplication.DataAccess\obj\Release\PersonApplication.DataAccess.csprojResolveAssemblyReference.cache
