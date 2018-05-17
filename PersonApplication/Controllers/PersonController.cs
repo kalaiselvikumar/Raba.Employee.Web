@@ -133,31 +133,47 @@ namespace PersonApplication.Controllers
 
         public ActionResult SaveEmployee(PersonAddressViewModel personAddressViewModel)
         {
-            if (ModelState.IsValid)
+            Person Person = null;
+            Address Address = null;
+            try
             {
-                var Person = new Person();
-                var Address = new Address();
+                if (ModelState.IsValid)
+                {
+                    Person = new Person();
+                    Address = new Address();
 
-                Person.FirstName = personAddressViewModel.FirstName;
-                Person.LastName = personAddressViewModel.LastName;
-                Person.Email = personAddressViewModel.Email;
-                Address.Address1 = personAddressViewModel.Address1;
-                Address.Address2 = personAddressViewModel.Address2;
-                Address.City = personAddressViewModel.City;
-                Address.State = personAddressViewModel.State;
-                Address.ZipCode = personAddressViewModel.ZipCode;
+                    Person.FirstName = personAddressViewModel.FirstName;
+                    Person.LastName = personAddressViewModel.LastName;
+                    Person.Email = personAddressViewModel.Email;
+                    Address.Address1 = personAddressViewModel.Address1;
+                    Address.Address2 = personAddressViewModel.Address2;
+                    Address.City = personAddressViewModel.City;
+                    Address.State = personAddressViewModel.State;
+                    Address.ZipCode = personAddressViewModel.ZipCode;
 
-                _personRepository.Add(Person);
-                _personRepository.Save();
+                    _personRepository.Add(Person);
+                    _personRepository.Save();
 
-                Address.AddressId = Person.PersonId;
-                _addressRepository.Add(Address);
-                _addressRepository.Save();
-                return RedirectToAction("EmployeeDetails");
+                    Address.AddressId = Person.PersonId;
+                    _addressRepository.Add(Address);
+                    _addressRepository.Save();
+                    return RedirectToAction("EmployeeDetails");
+                }
+                else
+                {
+                    return View("AddAddress", personAddressViewModel);
+                }
             }
-            else
+            catch(Exception ex)
             {
-                return View("AddAddress", personAddressViewModel);
+                throw ex;
+
+            }
+            finally
+            {
+                Person = null;
+                Address = null;
+
             }
         }
         public ActionResult Edit(int Id)
