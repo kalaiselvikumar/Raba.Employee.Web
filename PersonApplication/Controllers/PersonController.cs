@@ -54,6 +54,36 @@ namespace PersonApplication.Controllers
             }
         }
 
+        public ActionResult DisplayDetails()
+        {
+            try
+            {
+                var _persons = _personRepository.GetAll();
+
+                var _personAddressList = (from p in _persons
+                                          select new PersonAddressViewModel()
+                                          {
+                                              PersonId = p.PersonId,
+                                              FirstName = p.FirstName,
+                                              LastName = p.LastName,
+                                              Email = p.Email,
+                                              Address1 = p.PersonAddress.Address1,
+                                              Address2 = p.PersonAddress.Address2,
+                                              City = p.PersonAddress.City,
+                                              State = p.PersonAddress.State,
+                                              ZipCode = p.PersonAddress.ZipCode
+                                          }).ToList();
+
+                return View(_personAddressList);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+
+            }
+        }
+
+
         [HttpGet]
         public ActionResult AddEmployee()
         {

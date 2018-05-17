@@ -92,5 +92,7 @@ C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.DataAccess\bin\Debug\Syst
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.DataAccess\bin\Debug\System.Web.WebPages.xml
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.DataAccess\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.DataAccess\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.DataAccess\obj\Debug\PersonApplication.DataAccess.csproj.CoreCompileInputs.cache
+C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.DataAccess\obj\Debug\PersonApplication.DataAccess.csproj.CopyComplete
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.DataAccess\obj\Debug\PersonApplication.DataAccess.dll
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.DataAccess\obj\Debug\PersonApplication.DataAccess.pdb

@@ -121,6 +121,7 @@ C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.Tests\bin\Debug\System.We
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.Tests\bin\Debug\System.Web.WebPages.dll
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.Tests\bin\Debug\EntityFramework.DynamicFilters.dll
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.Tests\bin\Debug\System.Web.Optimization.dll
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.Tests\bin\Debug\log4net.dll
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.Tests\bin\Debug\PersonApplication.DataAccess.pdb
@@ -145,8 +146,11 @@ C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.Tests\bin\Debug\System.We
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.Tests\bin\Debug\System.Web.WebPages.xml
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.Tests\bin\Debug\EntityFramework.DynamicFilters.xml
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.Tests\bin\Debug\System.Web.Optimization.xml
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.Tests\bin\Debug\log4net.xml
-C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.Tests\obj\Debug\PersonApplication.Tests.csprojResolveAssemblyReference.cache
+C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.Tests\obj\Debug\PersonApplication.Tests.csprojAssemblyReference.cache
+C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.Tests\obj\Debug\PersonApplication.Tests.csproj.CoreCompileInputs.cache
+C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.Tests\obj\Debug\PersonApplication.Tests.csproj.CopyComplete
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.Tests\obj\Debug\PersonApplication.Tests.dll
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication.Tests\obj\Debug\PersonApplication.Tests.pdb

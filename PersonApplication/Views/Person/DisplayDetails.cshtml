@@ -1,0 +1,44 @@
+﻿@model IEnumerable<PersonApplication.ViewModel.PersonAddressViewModel>
+@using Telerik.Web.Mvc.UI;
+@{
+    ViewBag.Title = "DisplayDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>DisplayDetails</h2>
+
+</br>
+<div>
+    @{
+
+        Html.Telerik().Grid(Model)
+            .Name("Grid")
+             .DataKeys(keys => keys.Add(c => c.PersonId))
+            .Footer(true)
+            .Sortable()
+            .Filterable()
+
+            .Scrollable(scr => scr.Height(330))
+
+            .Columns(x =>
+            {
+                x.Bound(m => m.PersonId).Width(120).HeaderTemplate("UserId").Title("User ID").Groupable(false);
+                x.Bound(m => m.FirstName).Width(120).Groupable(false).Filterable(true).Groupable(true);
+                x.Bound(m => m.LastName).Width(120).Groupable(true).Filterable(true).Groupable(true);
+                x.Bound(m => m.Email).Width(120).HeaderTemplate("UserId").Filterable(true);
+                x.Bound(m => m.Address1).Width(120).Groupable(false).Filterable(true);
+                x.Bound(m => m.Address2).Width(120).Groupable(true).Filterable(true);
+                x.Bound(m => m.City).Width(120).Groupable(false).Filterable(true);
+                x.Bound(m => m.State).Width(120).Groupable(false).Filterable(true);
+                x.Bound(m => m.ZipCode).Width(120).Groupable(false).Filterable(true);
+            })
+
+          .Pageable(x => x.PageSize(2))
+
+            .Render();
+
+        @(Html.Telerik().StyleSheetRegistrar().DefaultGroup(group => group.Add("telerik.common.css").Add("telerik.windows7.css").Add("telerik.hay.min.css").Combined(true).Compress(true)))
+        @(Html.Telerik().ScriptRegistrar())
+    }
+
+</div> 
