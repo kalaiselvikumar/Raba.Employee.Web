@@ -14,6 +14,12 @@ namespace PersonApplication
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Person", action = "EmployeeDetails", id = UrlParameter.Optional }
             );
+            routes.MapRoute(
+        "DisplayDetails",                               // Route name
+        "Person/Page/{page}",                           // URL with params
+        new { controller = "Person", action = "DisplayDetails" } // Param defaults
+    );
+
         }
     }
 }

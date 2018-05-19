@@ -1,5 +1,9 @@
-﻿@model IEnumerable<PersonApplication.ViewModel.PersonAddressViewModel>
+﻿@*@model IEnumerable<PersonApplication.ViewModel.PersonAddressViewModel>*@
+@*@model IPagedList<PersonApplication.ViewModel.PersonAddressViewModel>*@
 @using Telerik.Web.Mvc.UI;
+@using PagedList.Mvc;
+@using PagedList;
+@model IPagedList<PersonApplication.ViewModel.PersonAddressViewModel>
 @{
     ViewBag.Title = "DisplayDetails";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -35,10 +39,16 @@
 
           .Pageable(x => x.PageSize(2))
 
+
             .Render();
 
         @(Html.Telerik().StyleSheetRegistrar().DefaultGroup(group => group.Add("telerik.common.css").Add("telerik.windows7.css").Add("telerik.hay.min.css").Combined(true).Compress(true)))
         @(Html.Telerik().ScriptRegistrar())
     }
 
-</div> 
+</div>
+@Html.PagedListPager(Model,Page=> Url.Action("DisplayDetails", new
+{ Page,
+    searchby =Request.QueryString["searchby"],
+    search = Request.QueryString["search"]
+    }))

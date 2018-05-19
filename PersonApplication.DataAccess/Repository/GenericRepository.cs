@@ -1,4 +1,5 @@
-﻿using PersonApplication.DataAccess.Models;
+﻿
+using PersonApplication.DataAccess.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -63,11 +64,7 @@ namespace PersonApplication.DataAccess.Repository
             return _dbset.AsQueryable<T>();
         }
 
-        //public virtual IEnumerable<T> GetAll()
-        //{
-        //    return _dbset.Where(e => e.IsDeleted == false).Include("PersonAddress");
-
-        //}
+      
 
         public virtual IEnumerable<T> FindBy(System.Linq.Expressions.Expression<Func<T, bool>> predicate)
         {
@@ -91,5 +88,5 @@ namespace PersonApplication.DataAccess.Repository
                 }
             }
         }
-    }
+      }
 }

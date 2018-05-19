@@ -310,6 +310,8 @@ C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\roslyn\Microsoft.Code
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\roslyn\System.IO.Compression.dll
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\roslyn\VBCSCompiler.exe
+C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\obj\Debug\PersonApplication.csprojAssemblyReference.cache
+C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\obj\Debug\PersonApplication.csproj.CoreCompileInputs.cache
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\ApplicationInsights.config
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\PersonApplication.dll.config
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\PersonApplication.dll
@@ -378,6 +380,8 @@ C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\Microsoft.CodeAnalysi
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\Microsoft.CodeAnalysis.Workspaces.dll
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\Microsoft.Web.Infrastructure.dll
+C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\PagedList.dll
+C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\PagedList.Mvc.dll
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\PersonApplication.DataAccess.dll
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\System.AppContext.dll
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\System.Collections.Immutable.dll
@@ -443,6 +447,8 @@ C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\Microsoft.CodeAnalysi
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\Microsoft.CodeAnalysis.Workspaces.Desktop.pdb
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\Microsoft.CodeAnalysis.Workspaces.Desktop.xml
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\PagedList.xml
+C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\PagedList.Mvc.xml
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\System.Collections.Immutable.xml
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\System.Reflection.Metadata.xml
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\System.Web.Helpers.xml
@@ -501,8 +507,6 @@ C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\ru\Microsoft.Build.Ut
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\tr\Microsoft.Build.Utilities.Core.resources.dll
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\zh-Hans\Microsoft.Build.Utilities.Core.resources.dll
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\bin\zh-Hant\Microsoft.Build.Utilities.Core.resources.dll
-C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\obj\Debug\PersonApplication.csprojAssemblyReference.cache
-C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\obj\Debug\PersonApplication.csproj.CoreCompileInputs.cache
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\obj\Debug\PersonApplication.csproj.CopyComplete
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\obj\Debug\PersonApplication.dll
 C:\Raba_SourceCode\Raba.Employee.Web\PersonApplication\obj\Debug\PersonApplication.pdb

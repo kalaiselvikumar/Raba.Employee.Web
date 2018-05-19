@@ -3,6 +3,7 @@ using PersonApplication.DataAccess.Models;
 using System.Collections.Generic;
 using System.Linq;
 
+
 namespace PersonApplication.DataAccess.Repository
 {
     public class PersonRepository : GenericRepository<Person>, IPersonRepository
@@ -16,5 +17,7 @@ namespace PersonApplication.DataAccess.Repository
             //  return _dbset.Where(e => e.IsDeleted == false).Include("PersonAddress");
             return _dbset.Include("PersonAddress");
         }
+      
+
     }
 }

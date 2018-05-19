@@ -5,6 +5,8 @@ using System.Linq;
 using PersonApplication.ViewModel;
 using System;
 using System.Data.Entity;
+using PagedList.Mvc;
+using PagedList;
 
 namespace PersonApplication.Controllers
 {
@@ -54,11 +56,20 @@ namespace PersonApplication.Controllers
             }
         }
 
-        public ActionResult DisplayDetails()
+        public ActionResult DisplayDetails(int? page)
         {
             try
             {
-                var _persons = _personRepository.GetAll();
+                var pageNumber = page ?? 1;
+                    var pagesize = 2;
+                //    const int pageSize = 2;
+                //var _persons = _personRepository.GetDisplayAll(pagesize,pageNumber);
+                var _persons = _personRepository.GetAll().OrderBy(x=>x.PersonId);
+
+                //var paginatedDetails = _persons.Skip((page ?? 0) * pagesize)
+                //                          .Take(pagesize)
+                //                          .ToList();
+                //  var paginatedDetails = new PaginatedList<Person>(_persons, page ?? 0, pageSize);
 
                 var _personAddressList = (from p in _persons
                                           select new PersonAddressViewModel()
@@ -72,8 +83,7 @@ namespace PersonApplication.Controllers
                                               City = p.PersonAddress.City,
                                               State = p.PersonAddress.State,
                                               ZipCode = p.PersonAddress.ZipCode
-                                          }).ToList();
-
+                                          }).ToPagedList(pageNumber, pagesize);
                 return View(_personAddressList);
             }
             catch (Exception ex)
@@ -139,7 +149,7 @@ namespace PersonApplication.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    Person = new Person();
+                    Person = new Person(); 
                     Address = new Address();
 
                     Person.FirstName = personAddressViewModel.FirstName;

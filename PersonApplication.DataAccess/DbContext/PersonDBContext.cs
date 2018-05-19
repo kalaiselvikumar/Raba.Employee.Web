@@ -20,14 +20,17 @@ namespace PersonApplication.DataAccess
         {
             Database.SetInitializer(new UniDBInitializer<PersonDBContext>());
 
-            modelBuilder.Entity<Person>()
-                        .HasRequired(s => s.PersonAddress)
-                        .WithRequiredPrincipal(ad => ad.Person);
+            // Api Fluent for Navigation property. We can also do it at model level
+            //modelBuilder.Entity<Person>()
+            //            .HasRequired(s => s.PersonAddress)
+            //            .WithRequiredPrincipal(ad => ad.Person);
+
             // for each entity soft delete is imposed
             //modelBuilder.Entity<Person>().Map(m => m.Requires("IsDeleted").HasValue(false))
             //.Ignore(m => m.isDeleted);
 
             modelBuilder.Filter("IsDeleted", (ISoftDelete d) => d.IsDeleted, false);
+          
 
             base.OnModelCreating(modelBuilder);
         }
